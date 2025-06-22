@@ -11,7 +11,7 @@ deepgram-live-transcriber
 │   ├── deepgram_api.py     # Functions to interact with the Deepgram API
 │   ├── src
 |   │   ├── templates
-|   │   │   └── index.html      # Main UI for the application
+|   │   │   └── index.html      
 |   │   ├── static
 |   │   │   └── styles.css 
 ├── requirements.txt        # List of dependencies
