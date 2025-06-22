@@ -22,7 +22,7 @@ deepgram-live-transcriber
 
 ### 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/sakethpragallapati0705/HACKWEEK-day-1-Speech-to-Text-with-Deepgram-API.git
 cd deepgram-live-transcriber
 ```
 
