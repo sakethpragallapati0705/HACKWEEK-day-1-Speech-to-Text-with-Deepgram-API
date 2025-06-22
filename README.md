@@ -7,48 +7,52 @@ This project is a live voice transcription tool that utilizes the Deepgram API t
 ```
 deepgram-live-transcriber
 ├── src
-│   ├── app.py          # Main entry point of the application
-│   ├── deepgram_api.py # Functions to interact with the Deepgram API
-│   ├── ui.py          # User interface components
-│   └── utils.py       # Utility functions for audio handling and data processing
-├── requirements.txt    # List of dependencies
-└── README.md           # Project documentation
+│   ├── app.py              # Main entry point of the application
+│   ├── deepgram_api.py     # Functions to interact with the Deepgram API
+│   ├── src
+|   │   ├── templates
+|   │   │   └── index.html      # Main UI for the application
+|   │   ├── static
+|   │   │   └── styles.css 
+├── requirements.txt        # List of dependencies
+└── README.md               # Project documentation
 ```
 
 ## Setup Instructions
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd deepgram-live-transcriber
-   ```
+### 1. Clone the repository:
+```bash
+git clone <repository-url>
+cd deepgram-live-transcriber
+```
 
-2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+### 2. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-3. Obtain your Deepgram API key from the [Deepgram website](https://deepgram.com/).
-
-4. Set your API key in the environment variables or directly in the `deepgram_api.py` file.
+### 3. Set up the Deepgram API key:
+- Obtain your Deepgram API key from the [Deepgram website](https://www.deepgram.com/).
+- Set your API key either in the environment variables or directly in the `deepgram_api.py` file.
 
 ## Usage Guidelines
 
-1. Run the application:
-   ```
-   python src/app.py
-   ```
+### 1. Run the application:
+```bash
+python src/app.py
+```
 
-2. Click the "Start Recording" button to begin capturing audio. Click the button again to stop recording.
+### 2. Open your browser and navigate to:
+```
+http://127.0.0.1:5000
+```
 
-3. The transcribed text will appear in the text area as you speak.
+- Click the **"Start Recording"** button to begin capturing audio.
+- Click the button again to stop recording.
+- The transcribed text will appear in the text area as you speak.
 
 ## Overview of Functionality
 
 - **Real-time Transcription**: The application listens to voice input and transcribes it live using the Deepgram API.
 - **User Interface**: A simple UI allows users to control the recording and view the transcribed text.
 - **Audio Handling**: The application manages audio input and processes it for transcription.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
